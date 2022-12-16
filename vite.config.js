@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/lib/index.js"),
+      entry: path.resolve(__dirname, "src/lib/index.jsx"),
       name: "React-FI",
       fileName: (format) => `react-fi.${format}.js`,
     },
