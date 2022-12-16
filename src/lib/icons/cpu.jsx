@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Cpu = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -29,12 +27,5 @@ const Cpu = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => 
     </svg>
   );
 });
-
-Cpu.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Cpu.displayName = 'Cpu';
-
 export default Cpu;

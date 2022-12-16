@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Compass = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Compass = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref)
     </svg>
   );
 });
-
-Compass.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Compass.displayName = 'Compass';
-
 export default Compass;

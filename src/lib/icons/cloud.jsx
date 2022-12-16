@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Cloud = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const Cloud = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =
     </svg>
   );
 });
-
-Cloud.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Cloud.displayName = 'Cloud';
-
 export default Cloud;

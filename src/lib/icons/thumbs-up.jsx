@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const ThumbsUp = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const ThumbsUp = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref
     </svg>
   );
 });
-
-ThumbsUp.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 ThumbsUp.displayName = 'ThumbsUp';
-
 export default ThumbsUp;

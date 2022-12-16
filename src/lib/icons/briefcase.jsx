@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Briefcase = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Briefcase = forwardRef(({ color = 'currentColor', size = 24, ...rest }, re
     </svg>
   );
 });
-
-Briefcase.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Briefcase.displayName = 'Briefcase';
-
 export default Briefcase;

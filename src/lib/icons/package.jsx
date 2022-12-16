@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Package = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const Package = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref)
     </svg>
   );
 });
-
-Package.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Package.displayName = 'Package';
-
 export default Package;

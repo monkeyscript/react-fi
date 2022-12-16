@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const AlignRight = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const AlignRight = forwardRef(({ color = 'currentColor', size = 24, ...rest }, r
     </svg>
   );
 });
-
-AlignRight.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 AlignRight.displayName = 'AlignRight';
-
 export default AlignRight;

@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const UserMinus = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const UserMinus = forwardRef(({ color = 'currentColor', size = 24, ...rest }, re
     </svg>
   );
 });
-
-UserMinus.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 UserMinus.displayName = 'UserMinus';
-
 export default UserMinus;

@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Calendar = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const Calendar = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref
     </svg>
   );
 });
-
-Calendar.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Calendar.displayName = 'Calendar';
-
 export default Calendar;

@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Linkedin = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const Linkedin = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref
     </svg>
   );
 });
-
-Linkedin.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Linkedin.displayName = 'Linkedin';
-
 export default Linkedin;

@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const StopCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const StopCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, r
     </svg>
   );
 });
-
-StopCircle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 StopCircle.displayName = 'StopCircle';
-
 export default StopCircle;

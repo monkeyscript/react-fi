@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const MicOff = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -24,12 +22,5 @@ const MicOff = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) 
     </svg>
   );
 });
-
-MicOff.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 MicOff.displayName = 'MicOff';
-
 export default MicOff;

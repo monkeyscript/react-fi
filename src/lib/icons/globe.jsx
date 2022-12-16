@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Globe = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const Globe = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =
     </svg>
   );
 });
-
-Globe.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Globe.displayName = 'Globe';
-
 export default Globe;

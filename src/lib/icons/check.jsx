@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Check = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const Check = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =
     </svg>
   );
 });
-
-Check.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Check.displayName = 'Check';
-
 export default Check;

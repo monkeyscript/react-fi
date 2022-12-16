@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Tool = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const Tool = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =>
     </svg>
   );
 });
-
-Tool.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Tool.displayName = 'Tool';
-
 export default Tool;

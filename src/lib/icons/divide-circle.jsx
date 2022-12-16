@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const DivideCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const DivideCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest },
     </svg>
   );
 });
-
-DivideCircle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 DivideCircle.displayName = 'DivideCircle';
-
 export default DivideCircle;

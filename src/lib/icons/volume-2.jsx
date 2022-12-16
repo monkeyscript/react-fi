@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Volume2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Volume2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref)
     </svg>
   );
 });
-
-Volume2.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Volume2.displayName = 'Volume2';
-
 export default Volume2;

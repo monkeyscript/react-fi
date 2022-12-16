@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const AlertTriangle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const AlertTriangle = forwardRef(({ color = 'currentColor', size = 24, ...rest }
     </svg>
   );
 });
-
-AlertTriangle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 AlertTriangle.displayName = 'AlertTriangle';
-
 export default AlertTriangle;

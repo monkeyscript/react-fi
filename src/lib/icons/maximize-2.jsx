@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Maximize2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const Maximize2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, re
     </svg>
   );
 });
-
-Maximize2.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Maximize2.displayName = 'Maximize2';
-
 export default Maximize2;

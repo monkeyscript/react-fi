@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Cast = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Cast = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =>
     </svg>
   );
 });
-
-Cast.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Cast.displayName = 'Cast';
-
 export default Cast;

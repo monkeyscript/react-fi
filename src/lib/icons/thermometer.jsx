@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Thermometer = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const Thermometer = forwardRef(({ color = 'currentColor', size = 24, ...rest }, 
     </svg>
   );
 });
-
-Thermometer.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Thermometer.displayName = 'Thermometer';
-
 export default Thermometer;

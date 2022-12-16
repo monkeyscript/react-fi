@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const SkipForward = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const SkipForward = forwardRef(({ color = 'currentColor', size = 24, ...rest }, 
     </svg>
   );
 });
-
-SkipForward.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 SkipForward.displayName = 'SkipForward';
-
 export default SkipForward;

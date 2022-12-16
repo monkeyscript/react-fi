@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Chrome = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -24,12 +22,5 @@ const Chrome = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) 
     </svg>
   );
 });
-
-Chrome.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Chrome.displayName = 'Chrome';
-
 export default Chrome;

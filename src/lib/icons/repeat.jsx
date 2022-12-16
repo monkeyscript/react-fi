@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Repeat = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const Repeat = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) 
     </svg>
   );
 });
-
-Repeat.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Repeat.displayName = 'Repeat';
-
 export default Repeat;

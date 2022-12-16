@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const PlusSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const PlusSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest }, r
     </svg>
   );
 });
-
-PlusSquare.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 PlusSquare.displayName = 'PlusSquare';
-
 export default PlusSquare;

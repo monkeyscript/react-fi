@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Bell = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Bell = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) =>
     </svg>
   );
 });
-
-Bell.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Bell.displayName = 'Bell';
-
 export default Bell;

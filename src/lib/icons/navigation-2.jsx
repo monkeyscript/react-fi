@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Navigation2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const Navigation2 = forwardRef(({ color = 'currentColor', size = 24, ...rest }, 
     </svg>
   );
 });
-
-Navigation2.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Navigation2.displayName = 'Navigation2';
-
 export default Navigation2;

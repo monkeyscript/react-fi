@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Unlock = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const Unlock = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) 
     </svg>
   );
 });
-
-Unlock.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Unlock.displayName = 'Unlock';
-
 export default Unlock;

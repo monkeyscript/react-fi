@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Sun = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -28,12 +26,5 @@ const Sun = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => 
     </svg>
   );
 });
-
-Sun.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Sun.displayName = 'Sun';
-
 export default Sun;

@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const CreditCard = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const CreditCard = forwardRef(({ color = 'currentColor', size = 24, ...rest }, r
     </svg>
   );
 });
-
-CreditCard.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 CreditCard.displayName = 'CreditCard';
-
 export default CreditCard;

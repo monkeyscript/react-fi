@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Rss = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const Rss = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => 
     </svg>
   );
 });
-
-Rss.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Rss.displayName = 'Rss';
-
 export default Rss;

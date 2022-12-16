@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const BatteryCharging = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const BatteryCharging = forwardRef(({ color = 'currentColor', size = 24, ...rest
     </svg>
   );
 });
-
-BatteryCharging.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 BatteryCharging.displayName = 'BatteryCharging';
-
 export default BatteryCharging;

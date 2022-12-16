@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const Layers = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const Layers = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) 
     </svg>
   );
 });
-
-Layers.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 Layers.displayName = 'Layers';
-
 export default Layers;

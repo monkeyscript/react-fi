@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const ArrowLeftCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const ArrowLeftCircle = forwardRef(({ color = 'currentColor', size = 24, ...rest
     </svg>
   );
 });
-
-ArrowLeftCircle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 ArrowLeftCircle.displayName = 'ArrowLeftCircle';
-
 export default ArrowLeftCircle;

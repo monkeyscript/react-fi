@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const PhoneOutgoing = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const PhoneOutgoing = forwardRef(({ color = 'currentColor', size = 24, ...rest }
     </svg>
   );
 });
-
-PhoneOutgoing.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 PhoneOutgoing.displayName = 'PhoneOutgoing';
-
 export default PhoneOutgoing;

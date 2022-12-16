@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const ArrowDownRight = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const ArrowDownRight = forwardRef(({ color = 'currentColor', size = 24, ...rest 
     </svg>
   );
 });
-
-ArrowDownRight.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 ArrowDownRight.displayName = 'ArrowDownRight';
-
 export default ArrowDownRight;

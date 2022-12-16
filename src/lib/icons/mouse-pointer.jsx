@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const MousePointer = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const MousePointer = forwardRef(({ color = 'currentColor', size = 24, ...rest },
     </svg>
   );
 });
-
-MousePointer.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 MousePointer.displayName = 'MousePointer';
-
 export default MousePointer;

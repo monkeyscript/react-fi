@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const CornerLeftDown = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const CornerLeftDown = forwardRef(({ color = 'currentColor', size = 24, ...rest 
     </svg>
   );
 });
-
-CornerLeftDown.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 CornerLeftDown.displayName = 'CornerLeftDown';
-
 export default CornerLeftDown;

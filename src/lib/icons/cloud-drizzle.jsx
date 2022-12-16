@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const CloudDrizzle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -26,12 +24,5 @@ const CloudDrizzle = forwardRef(({ color = 'currentColor', size = 24, ...rest },
     </svg>
   );
 });
-
-CloudDrizzle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 CloudDrizzle.displayName = 'CloudDrizzle';
-
 export default CloudDrizzle;

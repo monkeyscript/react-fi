@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const DownloadCloud = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -22,12 +20,5 @@ const DownloadCloud = forwardRef(({ color = 'currentColor', size = 24, ...rest }
     </svg>
   );
 });
-
-DownloadCloud.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 DownloadCloud.displayName = 'DownloadCloud';
-
 export default DownloadCloud;

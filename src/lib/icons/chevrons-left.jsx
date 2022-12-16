@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const ChevronsLeft = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const ChevronsLeft = forwardRef(({ color = 'currentColor', size = 24, ...rest },
     </svg>
   );
 });
-
-ChevronsLeft.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 ChevronsLeft.displayName = 'ChevronsLeft';
-
 export default ChevronsLeft;

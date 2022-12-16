@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const DivideSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -23,12 +21,5 @@ const DivideSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest },
     </svg>
   );
 });
-
-DivideSquare.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 DivideSquare.displayName = 'DivideSquare';
-
 export default DivideSquare;

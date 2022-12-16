@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const CloudLightning = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -21,12 +19,5 @@ const CloudLightning = forwardRef(({ color = 'currentColor', size = 24, ...rest 
     </svg>
   );
 });
-
-CloudLightning.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 CloudLightning.displayName = 'CloudLightning';
-
 export default CloudLightning;

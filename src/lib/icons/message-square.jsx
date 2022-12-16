@@ -1,6 +1,4 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-
 const MessageSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   return (
     <svg
@@ -20,12 +18,5 @@ const MessageSquare = forwardRef(({ color = 'currentColor', size = 24, ...rest }
     </svg>
   );
 });
-
-MessageSquare.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
 MessageSquare.displayName = 'MessageSquare';
-
 export default MessageSquare;
