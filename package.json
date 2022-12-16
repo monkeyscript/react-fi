@@ -1,0 +1,48 @@
+{
+  "name": "react-fi",
+  "version": "1.0.2",
+  "description": "React library for Feather icons.",
+  "license": "Apache-2.0",
+  "author": "MonkeyScript",
+  "keywords": [
+    "feather-icons",
+    "react",
+    "feather",
+    "icons",
+    "svg"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/react-fi.umd.js",
+  "module": "./dist/react-fi.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-fi.es.js",
+      "require": "./dist/react-fi.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^4.0.1"
+  }
+}
