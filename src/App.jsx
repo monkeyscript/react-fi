@@ -1,7 +1,14 @@
 import React from "react";
+import { FiActivity } from "./lib";
+import * as ReactFI from "./lib";
 
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <FiActivity />
+      <ReactFI.FiActivity />
+    </div>
+  );
 };
 
 export default App;
