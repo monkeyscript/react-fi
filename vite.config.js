@@ -10,7 +10,7 @@ export default defineConfig({
       fileName: (format) => `react-fi.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
           react: "React",
