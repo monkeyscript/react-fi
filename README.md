@@ -28,8 +28,17 @@ export default App;
 Icons can be configured with inline props :
 
 ```javascript
-<FiActivity color="red" size={48} />
+<FiActivity color="red" size={48} strokeWidth={4} />
 ```
+
+Each and every SVG attribute is customizable. Here are few examples :
+
+| Prop Name      | Default Value |
+| -------------- | ------------- |
+| fill           | none          |
+| strokeWidth    | 2             |
+| strokeLinecap  | round         |
+| strokeLinejoin | round         |
 
 You can also include the whole icon pack :
 
