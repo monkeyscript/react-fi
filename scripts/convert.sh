@@ -2,7 +2,6 @@
 cd src/lib
 
 # Update file extensions from .js to .jsx 
-rm index.d.ts
 mv index.js index.jsx
 cd icons
 for foo in *.js; do mv $foo `basename $foo .js`.jsx; done
@@ -16,3 +15,4 @@ sed -i '/^\s*$/d' *
 # Add prefix in exports
 cd ..
 sed -i 's/as /as Fi/g' index.jsx
+sed -i 's/const /const Fi/g' index.d.ts
