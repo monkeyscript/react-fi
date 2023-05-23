@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <FiActivity />
-      <ReactFI.FiActivity />
+      <ReactFI.FiActivity size="lg" />
     </div>
   );
 };

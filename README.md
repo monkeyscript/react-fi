@@ -53,6 +53,20 @@ const App = () => {
 export default App;
 ```
 
+## Size Presets
+
+If you're using Tailwind CSS, you might feel more at ease with a predefined size (e.g., 'lg', 'xs', '2xl'). You may do the same for the size prop because it will be changed to the appropriate size value.
+
+```javascript
+<FiActivity size={'lg'} />
+
+// is same as
+
+<FiActivity size={18} />
+```
+
+If you are unfamiliar with Tailwind font size standards, please check out https://tailwindcss.com/docs/font-size.
+
 ## Issues & Contributions
 
 For a new feature, create an issue [here](https://github.com/monkeyscript/react-fi/issues). Open to all contributions :)

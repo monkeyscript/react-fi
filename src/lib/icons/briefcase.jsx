@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
 const Briefcase = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
-  return (
+  const formattedSize = formatSize(size);
+    return (
     <svg
       ref={ref}
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={formattedSize}
+      height={formattedSize}
       viewBox="0 0 24 24"
       fill="none"
       stroke={color}
