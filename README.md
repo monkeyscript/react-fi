@@ -58,7 +58,7 @@ export default App;
 If you're using Tailwind CSS, you might feel more at ease with a predefined size (e.g., 'lg', 'xs', '2xl'). You may do the same for the size prop because it will be changed to the appropriate size value.
 
 ```javascript
-<FiActivity size={'lg'} />
+<FiActivity size="lg" />
 
 // is same as
 
