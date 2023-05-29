@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import formatSize from '../size';
 const ToggleLeft = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   const formattedSize = formatSize(size);
     return (

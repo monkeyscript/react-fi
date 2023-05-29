@@ -13,7 +13,7 @@ sed -i '/};/d' *
 sed -i '/^\s*$/d' *
 
 # Adds size formatting
-sed -i 's/"react";/"react";\nimport formatSize from "..\/size";/' *
+sed -i "s/'react';/'react';\nimport formatSize from '..\/size';/" *
 sed -i 's/return (/const formattedSize = formatSize(size);\n    return (/' *
 sed -i 's/{size}/{formattedSize}/g' *
 

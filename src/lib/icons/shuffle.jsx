@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import formatSize from '../size';
 const Shuffle = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   const formattedSize = formatSize(size);
     return (
