@@ -25,11 +25,12 @@
     "LICENSE",
     "src/lib/index.d.ts"
   ],
-  "types": "src/lib/index.d.ts",
+  "types": "./src/lib/index.d.ts",
   "main": "./dist/react-fi.cjs",
   "module": "./dist/react-fi.js",
   "exports": {
     ".": {
+      "types": "./src/lib/index.d.ts",
       "import": "./dist/react-fi.js",
       "require": "./dist/react-fi.cjs"
     }
