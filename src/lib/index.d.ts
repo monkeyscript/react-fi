@@ -1,12 +1,33 @@
 /// <reference types="react" />
-import { FC, SVGAttributes } from "react";
+import * as React from "react";
 
-export interface IconProps extends SVGAttributes<SVGElement> {
+export type IconSize =
+  | "xs"
+  | "sm"
+  | "base"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl"
+  | "5xl"
+  | "6xl"
+  | "7xl"
+  | "8xl"
+  | "9xl"
+  | number
+  | (string & {});
+
+export interface IconProps extends React.SVGAttributes<SVGSVGElement> {
   color?: string;
-  size?: string | number;
+  size?: IconSize;
 }
 
-export type Icon = FC<IconProps>;
+export type Icon = React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<IconProps> & React.RefAttributes<SVGSVGElement>
+>;
+
+export function formatSize(size: IconSize): number | string;
 export const FiActivity: Icon;
 export const FiAirplay: Icon;
 export const FiAlertCircle: Icon;

@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import formatSize from '../size';
 const ArrowDownRight = forwardRef(({ color = 'currentColor', size = 24, ...rest }, ref) => {
   const formattedSize = formatSize(size);

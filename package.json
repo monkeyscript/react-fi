@@ -1,7 +1,7 @@
 {
   "name": "react-fi",
-  "version": "1.0.15",
-  "description": "React library for Feather icons.",
+  "version": "2.0.0",
+  "description": "React library for Feather icons with React 18 & 19 support.",
   "license": "Apache-2.0",
   "author": "MonkeyScript",
   "keywords": [
@@ -9,7 +9,10 @@
     "react",
     "feather",
     "icons",
-    "svg"
+    "svg",
+    "react18",
+    "react19",
+    "tree-shaking"
   ],
   "repository": {
     "type": "git",
@@ -18,45 +21,52 @@
   "bugs": {
     "url": "https://github.com/monkeyscript/react-fi/issues"
   },
+  "homepage": "https://github.com/monkeyscript/react-fi#readme",
   "type": "module",
+  "sideEffects": false,
   "files": [
     "dist",
     "README.md",
     "LICENSE",
     "src/lib/index.d.ts"
   ],
-  "types": "./src/lib/index.d.ts",
+  "types": "./dist/index.d.ts",
   "main": "./dist/react-fi.cjs",
   "module": "./dist/react-fi.js",
   "exports": {
     ".": {
-      "types": "./src/lib/index.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/react-fi.js",
-      "require": "./dist/react-fi.cjs"
-    }
+      "require": "./dist/react-fi.cjs",
+      "default": "./dist/react-fi.js"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "test": "vitest"
+    "build": "npm run clean && vite build && npm run copy-types",
+    "build:demo": "vite build --config vite.demo.config.js",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "copy-types": "node -e \"require('fs').copyFileSync('src/lib/index.d.ts', 'dist/index.d.ts')\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite": "^4.0.1",
-    "vitest": "^0.34.6"
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vitest": "^5.1.0"
   }
 }

@@ -285,3 +285,4 @@ export { default as FiZapOff } from './icons/zap-off';
 export { default as FiZap } from './icons/zap';
 export { default as FiZoomIn } from './icons/zoom-in';
 export { default as FiZoomOut } from './icons/zoom-out';
+export { default as formatSize } from './size';

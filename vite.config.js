@@ -7,17 +7,23 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/lib/index.jsx"),
       name: "React-FI",
-      fileName: "react-fi",
+      fileName: (format) => (format === "es" ? "react-fi.js" : "react-fi.cjs"),
       formats: ["cjs", "es"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
+        banner: "'use client';",
         globals: {
           react: "React",
+          "react-dom": "ReactDOM",
         },
       },
     },
   },
   plugins: [react()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+  },
 });
