@@ -30,11 +30,11 @@ jobs:
       - name: TypeScript Typecheck
         run: npm run typecheck
 
-      - name: Run Test Suite
-        run: npm test
-
       - name: Build Library (ESM + CJS)
         run: npm run build
+
+      - name: Run Test Suite
+        run: npm test
 
       - name: Build Demo Showcase
         run: npm run build:demo
