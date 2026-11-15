@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import * as Icons from "./lib";
 
 const ALL_ICONS = Object.keys(Icons)
@@ -12,6 +12,12 @@ export default function App() {
   const [color, setColor] = useState("#3b82f6");
   const [dark, setDark] = useState(true);
   const [copiedName, setCopiedName] = useState(null);
+
+  useEffect(() => {
+    const currentBg = dark ? "#0f172a" : "#f8fafc";
+    document.documentElement.style.backgroundColor = currentBg;
+    document.body.style.backgroundColor = currentBg;
+  }, [dark]);
 
   const filteredIcons = useMemo(() => {
     const q = search.trim().toLowerCase();
