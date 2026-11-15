@@ -1,10 +1,13 @@
 # React-FI
 
 [![npm](https://img.shields.io/npm/v/react-fi.svg)](https://www.npmjs.com/package/react-fi)
+[![CI](https://github.com/monkeyscript/react-fi/actions/workflows/ci.yml/badge.svg)](https://github.com/monkeyscript/react-fi/actions/workflows/ci.yml)
 [![License](https://img.shields.io/npm/l/react-fi.svg)](https://github.com/monkeyscript/react-fi/blob/main/LICENSE)
 [![React 18 & 19 Compatible](https://img.shields.io/badge/React-18%20%7C%2019-61dafb.svg)](https://react.dev)
 
 A modern, tree-shakeable React library for [Feather icons](https://feathericons.com/) with native TypeScript support, Tailwind-compatible size presets, `ref` forwarding, and full compatibility with React 18, React 19, and Next.js (App Router / React Server Components).
+
+🚀 **[Browse Live Icon Explorer](https://monkeyscript.github.io/react-fi/)**
 
 ---
 
